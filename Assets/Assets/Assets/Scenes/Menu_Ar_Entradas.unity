@@ -151,6 +151,7 @@ Transform:
   - {fileID: 1482146303}
   - {fileID: 1593543138}
   - {fileID: 695925131}
+  - {fileID: 1869050839}
   m_Father: {fileID: 264774324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -703,7 +704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 711, y: 201}
+  m_AnchoredPosition: {x: 691.19, y: 201}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454532647
@@ -803,6 +804,7 @@ MonoBehaviour:
   btn_info_2: {fileID: 1945071073}
   boton_verfotito: {fileID: 488543271}
   boton_adiosfoto: {fileID: 1994022887}
+  btn_verfotografiaplatillo: {fileID: 1005980561}
   anim: {fileID: 517274978}
   anim_plato: {fileID: 539683947}
   chef: {fileID: 576384372}
@@ -960,6 +962,7 @@ MonoBehaviour:
   btn_adiosfoticos: {fileID: 1994022887}
   anim_foto: {fileID: 1005980565}
   anim_button: {fileID: 488543277}
+  script_buttoninfo: {fileID: 454532650}
 --- !u!95 &488543277
 Animator:
   serializedVersion: 3
@@ -3306,6 +3309,36 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1869050838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869050839}
+  m_Layer: 0
+  m_Name: efecto_camara
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869050839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869050838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 68117741}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945071073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,7 +3358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1945071074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3342,7 +3375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 711, y: 201}
+  m_AnchoredPosition: {x: 691.19, y: 201}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945071075
@@ -3363,6 +3396,7 @@ MonoBehaviour:
   btn_info_2: {fileID: 1945071073}
   boton_verfotito: {fileID: 488543271}
   boton_adiosfoto: {fileID: 1994022887}
+  btn_verfotografiaplatillo: {fileID: 1005980561}
   anim: {fileID: 517274978}
   anim_plato: {fileID: 539683947}
   chef: {fileID: 576384372}
@@ -3551,6 +3585,7 @@ MonoBehaviour:
   btn_adiosfoticos: {fileID: 1994022887}
   anim_foto: {fileID: 1005980565}
   anim_button: {fileID: 488543277}
+  script_buttoninfo: {fileID: 454532650}
 --- !u!95 &1994022890
 Animator:
   serializedVersion: 3

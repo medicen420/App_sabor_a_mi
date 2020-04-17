@@ -11,6 +11,17 @@ public class Button_info : MonoBehaviour
     public GameObject btn_info_2;
     public GameObject boton_verfotito;
     public GameObject boton_adiosfoto;
+    //Estos GameObjects sirven para indicar que en caso de que la fotografia de el platillo
+    //se este mostrando y presionemos el boton de infor este desaparecera, sin necesidad de oprimir
+    //por segunda vez el boton que nos permite visualizar las fotos
+
+    //Esta es la fotografia del platillo
+    public GameObject btn_verfotografiaplatillo;
+
+
+    //public GameObject btn_adiosfoticos;
+
+
     public Animator anim;
     public Animator anim_plato;
     public Animator chef;
@@ -50,10 +61,19 @@ public class Button_info : MonoBehaviour
         btn_info_1.SetActive(false);
         btn_info_2.SetActive(true);
         chef.SetBool("chefcito", true);
-        boton_verfotito.SetActive(false);
-        boton_adiosfoto.SetActive(true);
-       
-       //boton_verfoto.SetBool("ver", true);
+        //estos son los game objects de las fotos de los platillos
+        boton_verfotito.SetActive(true);
+        boton_adiosfoto.SetActive(false);
+
+        btn_verfotografiaplatillo.SetActive(true);
+
+
+        //fotografia de el platillo se va a mostrar en pantalla cada vez que le demos click al boton de info
+
+
+
+
+        //boton_verfoto.SetBool("ver", true);
 
 
 
@@ -72,6 +92,9 @@ public class Button_info : MonoBehaviour
         chef.SetBool("chefcito", false);
         boton_verfotito.SetActive(false);
         boton_adiosfoto.SetActive(false);
+        //fotografia dejara de verse en pantalla cuando presionemos de nuevo el boton de info
+        btn_verfotografiaplatillo.SetActive(false);
+
 
 
         //boton_verfoto.SetBool("ver", false);
