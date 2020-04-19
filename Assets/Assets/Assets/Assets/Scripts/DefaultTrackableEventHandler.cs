@@ -19,10 +19,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected TrackableBehaviour mTrackableBehaviour;
 
+    
 	public GameObject objeto;
     public GameObject lineatiempo;
     public GameObject info_platillo;
     public GameObject musica;
+    public GameObject Quehacer;
 
 
 
@@ -101,8 +103,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         lineatiempo.SetActive(true);
         info_platillo.SetActive(true);
         musica.SetActive(true);
-        
-        
+        Quehacer.SetActive(true);
+
+
+
     }
 
 
@@ -128,6 +132,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         lineatiempo.SetActive(false);
         info_platillo.SetActive(false);
         musica.SetActive(false);
+        Quehacer.SetActive(false);
+
     }
 
     #endregion // PRIVATE_METHODS

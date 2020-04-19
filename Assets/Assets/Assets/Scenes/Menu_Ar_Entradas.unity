@@ -437,6 +437,7 @@ MonoBehaviour:
   lineatiempo: {fileID: 1802275431}
   info_platillo: {fileID: 0}
   musica: {fileID: 389712921}
+  Quehacer: {fileID: 0}
 --- !u!114 &264774329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,8 +679,8 @@ GameObject:
   - component: {fileID: 454532649}
   - component: {fileID: 454532648}
   - component: {fileID: 454532647}
-  - component: {fileID: 454532650}
   - component: {fileID: 454532651}
+  - component: {fileID: 454532650}
   m_Layer: 5
   m_Name: Button_info_platillo
   m_TagString: Untagged
@@ -794,20 +795,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 454532645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de21e63b5234a984195acb626b9af25c, type: 3}
+  m_Script: {fileID: 11500000, guid: 17071c69a0ff691469accf498e117a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 454532647}
-  btn2: {fileID: 1945071076}
-  btn_info_1: {fileID: 454532645}
-  btn_info_2: {fileID: 1945071073}
-  boton_verfotito: {fileID: 488543271}
-  boton_adiosfoto: {fileID: 1994022887}
-  btn_verfotografiaplatillo: {fileID: 1005980561}
-  anim: {fileID: 517274978}
-  anim_plato: {fileID: 539683947}
-  chef: {fileID: 576384372}
-  boton_verfoto: {fileID: 488543277}
+  "boton_informaci\xF3n1": {fileID: 454532647}
+  "boton_informaci\xF3n2": {fileID: 1945071076}
+  boton_verfoto1: {fileID: 488543273}
+  boton_verfoto2: {fileID: 1994022891}
+  animator_chef_sopa: {fileID: 576384372}
+  boton_gameobject1: {fileID: 454532645}
+  boton_gameobject2: {fileID: 1945071073}
 --- !u!114 &454532651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,7 +959,7 @@ MonoBehaviour:
   efecto_camara: {fileID: 1869050838}
   anim_foto: {fileID: 1005980565}
   anim_button: {fileID: 488543277}
-  script_buttoninfo: {fileID: 454532650}
+  script_buttoninfo: {fileID: 0}
 --- !u!95 &488543277
 Animator:
   serializedVersion: 3
@@ -3456,7 +3453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1945071074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3485,20 +3482,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1945071073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de21e63b5234a984195acb626b9af25c, type: 3}
+  m_Script: {fileID: 11500000, guid: 17071c69a0ff691469accf498e117a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 454532647}
-  btn2: {fileID: 1945071076}
-  btn_info_1: {fileID: 454532645}
-  btn_info_2: {fileID: 1945071073}
-  boton_verfotito: {fileID: 488543271}
-  boton_adiosfoto: {fileID: 1994022887}
-  btn_verfotografiaplatillo: {fileID: 1005980561}
-  anim: {fileID: 517274978}
-  anim_plato: {fileID: 539683947}
-  chef: {fileID: 576384372}
-  boton_verfoto: {fileID: 488543277}
+  "boton_informaci\xF3n1": {fileID: 454532647}
+  "boton_informaci\xF3n2": {fileID: 1945071076}
+  boton_verfoto1: {fileID: 488543273}
+  boton_verfoto2: {fileID: 1994022891}
+  animator_chef_sopa: {fileID: 0}
+  boton_gameobject1: {fileID: 0}
+  boton_gameobject2: {fileID: 0}
 --- !u!114 &1945071076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3685,7 +3678,7 @@ MonoBehaviour:
   efecto_camara: {fileID: 1869050838}
   anim_foto: {fileID: 1005980565}
   anim_button: {fileID: 488543277}
-  script_buttoninfo: {fileID: 454532650}
+  script_buttoninfo: {fileID: 0}
 --- !u!95 &1994022890
 Animator:
   serializedVersion: 3

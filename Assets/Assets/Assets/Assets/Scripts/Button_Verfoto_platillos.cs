@@ -5,31 +5,27 @@ using UnityEngine.UI;
 
 public class Button_Verfoto_platillos : MonoBehaviour
 {
+    //Estos son los botones para ver las fotografías
+    //Existen 2 ya que uno activara la animación de la foto cuando sale por primera vez
+    //El segundo activará la animación de la fotografía cerrandose
+    public Button Ver_foto1_Button;
+    public Button Ver_foto2_Button;
+    //Deseo desactivar los botones simultaneamente por lo tanto los declarare como Game Objects
+    public GameObject Ver_foto1_GameObject;
+    public GameObject Ver_foto2_GameObject;
 
-    //estos son botones 
-    public Button btn_verfoto;
-    public Button btn_adiosfoto;
-    //estos son los botones pero se utilizan como gameobjects
-    public GameObject btn_verfoticos;
-    public GameObject btn_adiosfoticos;
-    //Este game object sera el efecto de sonido de una camara tomando una foto
-    //haciendo referencia a la fotografía que va a aparecer
-    public GameObject efecto_camara;
+    //Esta línea de código activara el sonido de flash
+    public GameObject Flash;
 
-    
-    //Esto es el animator que controla la animación de la fotografia del producto
+    //Voy a mandar llamar a mi Animator controler de la fotografia del platillo
     public Animator anim_foto;
-    public Animator anim_button;
-    // Start is called before the first frame update
-    public Button_info script_buttoninfo;
 
+    //public Animator anim_foto;
 
     void Start()
     {
-        btn_verfoto.onClick.AddListener(PressButtonver);
-        btn_adiosfoto.onClick.AddListener(Adiosbuttonver);
-        script_buttoninfo = GetComponent<Button_info>();
-        //efecto_camara.SetActive(false);
+        Ver_foto1_Button.onClick.AddListener(Open);
+        Ver_foto2_Button.onClick.AddListener(Close);
 
 
     }
@@ -40,38 +36,24 @@ public class Button_Verfoto_platillos : MonoBehaviour
         
     }
 
-    public void PressButtonver()
+    public void Open()
     {
+        //AQUI AL PRINCIPIO EL BOTON 1 ESTA EN TRUE POR ESO TIENE QUE SER DESACTIVADO
+        Ver_foto1_GameObject.SetActive(false);
+        Ver_foto2_GameObject.SetActive(true);
         anim_foto.SetBool("Spa", true);
-        anim_button.SetBool("ver", true);
-        efecto_camara.SetActive(true);
-
-        //El problema era que estaba activando el boton que se esta presionando y eso no tenia logica,
-        //ya que no puedes activar algo que ya esta activado, asi que cuando presionas el boton este se desactiva y se activa otro nuevo
-        //este nuevo sera el encargado de hacer lo que sigue dentro de la aplicación
-        btn_verfoticos.SetActive(false);
-        btn_adiosfoticos.SetActive(true);
-        //Compartir el script fue la unica solucion para que se vuelva a activar la fotografia pero unicamente cuando presionamos el boton
-        //de ver platillo o de visualizar la fotogreafía
-        script_buttoninfo.btn_verfotografiaplatillo.SetActive(true);
-       
-
-        
-        Debug.Log("andamos al 100");
+        Debug.Log("presiona");
+        Flash.SetActive(true);
     }
-
-    public void Adiosbuttonver()
+    public void Close()
     {
+        //EN ESTA PARTE EL BOTON 1 VUELVE A SER TRUE Y EL OTRO ES DESACTIVADO
+        Ver_foto1_GameObject.SetActive(true);
+        Ver_foto2_GameObject.SetActive(false);
         anim_foto.SetBool("Spa", false);
-        anim_button.SetBool("ver", false);
-        efecto_camara.SetActive(false);
-
-        //Aqui cuando presionamos por segunda vez el boton, este se desactiva y el primero se activa para que
-        //se respete el ciclo que hay en la programación, podriamos decir que va de arriba hacia abajo y de abajo hacia arriba
-        btn_verfoticos.SetActive(true);
-        btn_adiosfoticos.SetActive(false);
-        
-
-
+        Debug.Log("apareci");
+        Flash.SetActive(false);
     }
+
+   
 }

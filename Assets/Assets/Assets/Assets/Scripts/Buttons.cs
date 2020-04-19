@@ -29,7 +29,7 @@ public class Buttons : MonoBehaviour
     {
         Debug.Log("me estas presionando");
         anima.SetBool("yes", true);
-        anim.SetBool("yess", true);
+        
 
     }
 
