@@ -97,6 +97,7 @@ public class Button_informacion : MonoBehaviour
         //la foto se cerrara.
         script_foto.anim_foto.SetBool("Spa", false);
         script_foto.Ver_foto2_GameObject.SetActive(false);
+        script_foto.Flash.SetActive(false);
 
 
 

@@ -21,15 +21,15 @@ EditorBuildSettings:
     path: Assets/Assets/Assets/Scenes/Plato del dia.unity
     guid: 8bca9e4eacb38904e87757a8ac951738
   - enabled: 1
-    path: Assets/Assets/Assets/Scenes/Menu_Ar_Entradas.unity
-    guid: 680b430f9764d2041819766bde0299b0
-  - enabled: 1
-    path: Assets/Assets/Assets/Scenes/Menu_Ar_Plato fuerte.unity
-    guid: bf4af9f5c0a53304497b0367cdc5d898
-  - enabled: 1
-    path: Assets/Assets/Assets/Scenes/Menu_Ar_Postres.unity
-    guid: 4449ef0963ddccd4ebe5af86b48ef0bd
-  - enabled: 1
     path: Assets/Assets/Assets/Scenes/Menu_Ar.unity
     guid: 607eadf37c191f7448acd44ad0cdb638
+  - enabled: 1
+    path: Assets/Assets/Assets/Scenes/Menu_Ar_Spaghetti.unity
+    guid: c72ed52a9eb9a8f4cbd0a1b91a9ac375
+  - enabled: 1
+    path: Assets/Assets/Assets/Scenes/Menu_Ar Arrachera.unity
+    guid: 0c298f0fc87d1d14890df74f1718216f
+  - enabled: 1
+    path: Assets/Assets/Assets/Scenes/Menu_Ar Pastel.unity
+    guid: 7ebb2f74b9a62764683502e7f2b06b90
   m_configObjects: {}
